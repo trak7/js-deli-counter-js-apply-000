@@ -18,7 +18,7 @@ function currentLine(katzDeliLine){
 	var sentence = 'The line is currently: '
 	if (katzDeliLine.length > 0) {
 		katzDeliLine.forEach(function(customer, i){
-			sentence = sentence.concat(`{i + 1}. ${customer}, `)
+			sentence = sentence.concat(`${i + 1}. ${customer}, `)
 		})
 		sentence = sentence.slice(0, -2)
 	} else {
